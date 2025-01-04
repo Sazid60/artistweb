@@ -27,3 +27,36 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+
+// "use client";
+// import { useEffect, useState } from 'react';
+
+// export default function Layout({ children }) {
+//   const [loading, setLoading] = useState(true);
+//   const [cookieAccepted, setCookieAccepted] = useState(false);
+
+//   useEffect(() => {
+//     setTimeout(() => setLoading(false), 3000);
+//   }, []);
+
+//   return (
+//     <>
+//       {loading ? (
+//         <div className="splash-screen">
+//           <h1>Loading...</h1>
+//         </div>
+//       ) : (
+//         <>
+//           {!cookieAccepted && (
+//             <div className="cookie-popup">
+//               <p>We use cookies for better experience.</p>
+//               <button onClick={() => setCookieAccepted(true)}>Accept</button>
+//             </div>
+//           )}
+//           {children}
+//         </>
+//       )}
+//     </>
+//   );
+// }

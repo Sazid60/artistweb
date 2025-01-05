@@ -1,0 +1,57 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.customer-count {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.count {
+  font-size: 2em;
+  margin-right: 10px;
+  animation: countAnimation 2s infinite;
+}
+
+.description {
+  margin-right: 20px;
+}
+
+.case-studies {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+@keyframes countAnimation {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
